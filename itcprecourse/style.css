@@ -44,25 +44,30 @@ body {
   justify-content: center;
   margin: 50px;
   padding: 50px;
+  width: 40rem;
+  height: 40rem;
 }
 
 .nav-item {
   /*border: 1px solid red;*/
-  align-self: flex-end;
+  /*align-self: flex-end;*/
   color: #3d6ded;
-  font-size: 18px;
-  margin: 1rem;
+  font-size: 1rem;
+  margin: 0.7rem;
+  padding: 0.7rem 0.7rem;
   text-decoration: none;
 }
 .topnav {
+  /*border: 1px solid yellow;*/
   background-color: #333;
-  overflow: hidden;
+  /*overflow: hidden;*/
   border-radius: 1rem;
 }
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
+  border-radius: 1rem;
   /*padding: 1rem 1rem;*/
   text-decoration: none;
   font-size: 1rem;
@@ -100,7 +105,7 @@ a{
   text-decoration: none;
 }
 .clickable{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   background-color: #3d6ded;
   border-radius: 1rem;
   color: white;
