@@ -16,24 +16,24 @@ let currentlySelected = 0;
 const AllGalleryImages = document.querySelectorAll(".gallery-img");
 
 function previous() {
-    nextBtn.disabled = false;
+    nextBtn.hidden = false;
     AllGalleryImages[currentlySelected].classList.remove("active");
     currentlySelected--;
     AllGalleryImages[currentlySelected].classList.add("active");
 
     if (currentlySelected === 0) {
-        prevBtn.disabled = true;
+        prevBtn.hidden = true;
     }
 }
 
 function next() {
-    prevBtn.disabled = false;
+    prevBtn.hidden = false;
     AllGalleryImages[currentlySelected].classList.remove("active");
     currentlySelected++;
     AllGalleryImages[currentlySelected].classList.add("active");
 
     if (currentlySelected + 1 === AllGalleryImages.length) {
-        nextBtn.disabled = true;
+        nextBtn.hidden = true;
     }
 }
 

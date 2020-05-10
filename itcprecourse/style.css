@@ -84,23 +84,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-.button {
-    background-color: #3d6ded;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
-}
-
-.btn:hover {
-    background-color: #ddd;
+.button:hover {
+    background-color: lightgray;
     color: black;
     border: none;
     border-radius: 1rem;
@@ -113,15 +98,16 @@ header {
     align-items: center;
 }
 
-.btn {
+.button {
     background-color: #0074d9;
     color: white;
     text-decoration: none;
+    border: none;
     font-size: 10px;
     font-size: 1rem;
     margin: 10px;
     padding: 10px;
-    border: none;
+    text-align: center;
     /*padding: 5px 20px;*/
     border-radius: 1rem;
     width: 120px;
@@ -132,10 +118,6 @@ header {
     margin-right: 15px;
 }
 
-.btn:disabled {
-    background-color: #333;
-    cursor: not-allowed;
-}
 .cities{
     list-style: none;
     display: flex;
