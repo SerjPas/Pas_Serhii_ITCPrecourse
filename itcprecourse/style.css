@@ -11,25 +11,7 @@ body {
     padding: 0;
 }
 
-.button {
-    background-color: #3d6ded;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
-}
 
-.button:hover {
-    background-color: #ddd;
-    color: black;
-}
 
 .card {
     border: 1px solid red;
@@ -83,8 +65,87 @@ header {
 .homemap {
     border: 1px solid yellow;
     margin: 2rem 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.gallery-img {
+    display: none;
+    max-height: 600px;
+}
+.active{
+    display: block;
+
+}
+.image-gallery{
+    /*for centering content*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: #3d6ded;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
 }
 
+.btn:hover {
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #0074d9;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    /*padding: 5px 20px;*/
+    border-radius: 1rem;
+    width: 120px;
+    cursor: pointer;
+}
+
+.prev {
+    margin-right: 15px;
+}
+
+.btn:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+}
+.cities{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+}
 .nav-item {
     /*border: 1px solid red;*/
     color: #3d6ded;
@@ -122,11 +183,11 @@ header {
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+/*.topnav a.active {*/
+/*    background-color: #4CAF50;*/
+/*    color: white;*/
 
-}
+/*}*/
 
 .page-wrapper {
     border: 1px solid pink;
