@@ -6,12 +6,11 @@ body {
     background-image: linear-gradient(to bottom right, lightgray, white);
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
+    /*font-size: 1.6rem;*/
     height: 100vh;
     margin: 0;
     padding: 0;
 }
-
-
 
 .card {
     border: 1px solid red;
@@ -37,7 +36,7 @@ header {
     justify-content: space-between;
 }
 
-.aboutme {
+.about-me {
     border: 1px solid yellow;
     margin: 2rem 1rem;
     display: flex;
@@ -62,14 +61,14 @@ header {
     padding-left: 0.5rem;
 }
 
-.homemap {
-    border: 1px solid yellow;
+.home-map {
+    /*border: 1px solid yellow;*/
     margin: 2rem 1rem;
     display: flex;
     flex-flow: column;
     justify-content: center;
 }
-.gallery-img {
+.gallery-map {
     display: none;
     max-height: 600px;
 }
@@ -124,7 +123,28 @@ header {
     flex-flow: column;
     justify-content: center;
 }
-.swiper-wrapper{
+.contact-form{
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+label {
+    display: block;
+}
+input:not([type="radio"]):not([type="checkbox"]),
+textarea {
+    width: 20rem;
+    font-family: Oxygen, Arial, Helvetica, sans-serif;
+    /*font-size: 1em;*/
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0.8rem;
+}
+.red{
+    color: #ff0000;
+}
+.wrapper{
     display: flex;
     justify-content: center;
 }
@@ -172,7 +192,7 @@ header {
 /*}*/
 
 .page-wrapper {
-    border: 1px solid pink;
+    /*border: 1px solid pink;*/
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -196,7 +216,7 @@ a {
 .h1 {
     margin-bottom: 0.1em;
     font-size: 44px;
-    font-size: 4.4rem;
+    /*font-size: 4.4rem;*/
     font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif, serif;
     color: #333;
     letter-spacing: -0.07em;
@@ -210,17 +230,12 @@ p {
 
 p.intro {
     font-size: 16px;
-    font-size: 1.6rem;
+    /*font-size: 1.6rem;*/
     color: #666666;
     line-height: 1.3em;
     margin-bottom: 0.7em;
     clear: both;
 }
-
-h2 {
-
-}
-
 
 #Serhii\ Pas {
     text-align: center;
