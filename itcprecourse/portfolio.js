@@ -13,7 +13,7 @@ fetch(GITHUB_URL)
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 let currentlySelected = 0;
-const AllGalleryImages = document.querySelectorAll(".gallery-img");
+const AllGalleryImages = document.querySelectorAll(".gallery-map");
 
 function previous() {
     nextBtn.hidden = false;
