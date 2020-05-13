@@ -8,53 +8,79 @@
     <script src="https://kit.fontawesome.com/50f84f2d8c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="page-wrapper">
-    <div>
-        <ul class="topnav">
-            <li><a href="index.html" class="nav-item">Home</a></li>
-            <li><a href="about.html" class="nav-item">About</a></li>
-            <li><a href="contact.html" class="nav-item">Contact</a></li>
-        </ul>
+<section class="container">
+    <div class="page-wrapper">
+        <div>
+            <ul class="topnav">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <section class="wrapper">
+                <div class="contact-form">
+                    <h1>Ask Me Anything!</h1>
+                    <p>Fill out the form below or send me an email to Passerhii@email.com</p>
+
+                    <form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
+
+                        <label for="name"> First Name<span class="red">*</span></label>
+
+                        <input type="text" id="name" name="name" value="" placeholder="John" required=""
+                               autofocus>
+                        <label for="name"> Last Name</label>
+                        <input type="text" id="lastname" name="lastname" value="" placeholder="Doe" autofocus
+                               onkeyup="check()">
+                        <label for="email">Email<span class="red">*</span></label>
+                        <input type="email" id="email" name="email" value="" placeholder="example@domain.com"
+                               required="" onkeyup="check()">
+                        <label for="phone">Phone number<span class="red">*</span></label>
+
+                        <input type="tel" id="phone" name="phone" value="" placeholder="+972-99-999-9999" required=""
+                               onkeyup="check()">
+                        <label for="comments">Comment:<span class="red">*</span></label>
+
+                        <textarea id="comments" name="comments" placeholder="Your questions or comments" required=""
+                                  onkeyup="check()"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 85px;"></textarea>
+                        <input id="send_to" type="hidden" name="send_to" value="passerhii@gmail.com">
+                        <button class="button" type="submit" id="submitButton" name="submitButton" value="Submit"
+                                disabled>Submit
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
     </div>
-
-    <div class="card">
-        <section class="wrapper">
-            <div class="contact-form">
-                <h1>Ask Me Anything!</h1>
-                <p>Fill out the form below or send me an email to Passerhii@email.com</p>
-
-                <form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
-
-                    <label for="name"> First Name<span class="red">*</span></label>
-
-                    <input type="text" id="name" name="name" value="" placeholder="John" required=""
-                           autofocus>
-                    <label for="name"> Last Name</label>
-                    <input type="text" id="lastname" name="lastname" value="" placeholder="Doe" autofocus onkeyup="check()">
-                    <label for="email">Email<span class="red">*</span></label>
-                    <input type="email" id="email" name="email" value="" placeholder="example@domain.com" required="" onkeyup="check()">
-                    <label for="phone">Phone number<span class="red">*</span></label>
-
-                    <input type="tel" id="phone" name="phone" value="" placeholder="+972-99-999-9999" required="" onkeyup="check()">
-                    <label for="comments">Comment:<span class="red">*</span></label>
-
-                    <textarea id="comments" name="comments" placeholder="Your questions or comments" required="" onkeyup="check()"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 85px;"></textarea>
-                    <input id="send_to" type="hidden" name="send_to" value="passerhii@gmail.com">
-                    <button class="button" type="submit" id="submitButton"  name="submitButton" value="Submit" disabled>Submit</button>
-                    <!--                </fieldset>-->
-                </form>
-            </div>
-        </section>
+</section>
+<div class="footer">
+    <div class="footer-wrapper">
+        <div class="single-footer">
+            <h2></h2>
+            <p>This page was built using: <span id="myText"></span></p>
+        </div>
+        <div class="single-footer">
+            <nav>
+                <h2></h2>
+                <ul class="bottomnav">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="single-footer" id="copyright">
+            <h2></h2>
+            <p>&#169; Israel Tech Challenge 2020</p>
+        </div>
     </div>
 </div>
-<div>&#169; Israel Tech Challenge</div>
 <!--<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>-->
 <script src="./submit.js"></script>
 <script src="./forms.js"></script>
-<script src="portfolio.js"></script>
-
-
-
+<script src="./portfolio.js"></script>
+<script src="./newText.js"></script>
 </body>
 </html>

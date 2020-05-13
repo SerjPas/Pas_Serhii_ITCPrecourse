@@ -42,5 +42,8 @@ function sendData() {
 
     let newEncode = decodeURIComponent(urlEncodedDataPairs.toString());
     console.log(newEncode.split('=').join(''));
+
+
 }
+
 

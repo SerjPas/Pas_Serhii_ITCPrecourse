@@ -8,9 +8,12 @@ fetch(GITHUB_URL, {mode: 'cors'})
         const profileImage = document.getElementById("profile-image");
         profileImage.src = data.avatar_url;
         profileImage.alt= "GitHub photo";
-        const profileName = document.getElementById('Serhii-Pas')
+        const profileName = document.getElementById('Serhii-Pas');
         profileName.textContent= data.name;
     });
+
+
+
 
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
