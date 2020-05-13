@@ -12,9 +12,6 @@ fetch(GITHUB_URL, {mode: 'cors'})
         profileName.textContent= data.name;
     });
 
-
-
-
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 let currentlySelected = 0;

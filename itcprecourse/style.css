@@ -13,7 +13,7 @@ body {
 }
 
 .card {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     align-items: center;
     background-image: linear-gradient(to bottom right, white, lightgray);
     border-radius: 10px;
@@ -27,7 +27,46 @@ body {
     /*padding: 50px;*/
     padding: 20px 40px 25px;
     width: 80%;
+    -webkit-transition-property: border-radius;
+    -moz-transition-property: border-radius;
+    -o-transition-property: border-radius;
+    transition-property: border-radius;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
 
+}
+.card:hover{
+    border-radius: 15%;
+}
+
+#brand{
+    cursor: grab;
+    z-index: 10;
+}
+#brand:hover{
+    border: 1px solid red;
+
+}
+.fun-hover {
+    background-image: -webkit-linear-gradient(left, rgb(115, 145, 105) 50%, yellow 50%);
+    background-image: linear-gradient(to right, rgb(115, 145, 105) 50%, yellow 50%);
+    background-position: 0;
+    background-size: 200%;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    margin: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+.fun-hover:hover {
+    background-position: -100%;
 }
 
 header {
@@ -37,7 +76,7 @@ header {
 }
 
 .about-me {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin: 2rem 1rem;
     display: flex;
     justify-content: center;
