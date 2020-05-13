@@ -1,12 +1,15 @@
-const GITHUB_URL = "https://api.github.com/users/IsraelTechChallengeITC";
+const GITHUB_URL = "https://api.github.com/users/SerjPas";
 
-fetch(GITHUB_URL)
+fetch(GITHUB_URL, {mode: 'cors'})
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         const profileImage = document.getElementById("profile-image");
         profileImage.src = data.avatar_url;
+        profileImage.alt= "GitHub photo";
+        const profileName = document.getElementById('Serhii-Pas')
+        profileName.textContent= data.name;
     });
 
 
