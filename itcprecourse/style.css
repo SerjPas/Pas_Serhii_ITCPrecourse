@@ -102,7 +102,6 @@ header {
     color: white;
     text-decoration: none;
     border: none;
-    font-size: 10px;
     font-size: 1rem;
     margin: 10px;
     padding: 10px;
@@ -111,6 +110,13 @@ header {
     border-radius: 1rem;
     width: 120px;
     cursor: pointer;
+}
+.button:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+
 }
 
 .prev {
@@ -131,7 +137,7 @@ header {
 label {
     display: block;
 }
-input:not([type="radio"]):not([type="checkbox"]),
+input,
 textarea {
     width: 20rem;
     font-family: Oxygen, Arial, Helvetica, sans-serif;
@@ -144,6 +150,13 @@ textarea {
 .red{
     color: #ff0000;
 }
+/*input:required:valid {*/
+/*    border: 1px solid green;*/
+/*}*/
+
+/*input:required:invalid {*/
+/*    border: 1px solid red;*/
+/*}*/
 .wrapper{
     display: flex;
     justify-content: center;

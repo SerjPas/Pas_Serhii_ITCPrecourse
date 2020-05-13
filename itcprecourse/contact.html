@@ -30,18 +30,18 @@
                     <input type="text" id="name" name="name" value="" placeholder="John" required=""
                            autofocus>
                     <label for="name"> Last Name</label>
-                    <input type="text" id="lastname" name="lastname" value="" placeholder="Doe" autofocus>
+                    <input type="text" id="lastname" name="lastname" value="" placeholder="Doe" autofocus onkeyup="check()">
                     <label for="email">Email<span class="red">*</span></label>
-                    <input type="email" id="email" name="email" value="" placeholder="example@domain.com" required="">
+                    <input type="email" id="email" name="email" value="" placeholder="example@domain.com" required="" onkeyup="check()">
                     <label for="phone">Phone number<span class="red">*</span></label>
 
-                    <input type="tel" id="phone" name="phone" value="" placeholder="+972-99-999-9999" required="">
+                    <input type="tel" id="phone" name="phone" value="" placeholder="+972-99-999-9999" required="" onkeyup="check()">
                     <label for="comments">Comment:<span class="red">*</span></label>
 
-                    <textarea id="comments" name="comments" placeholder="Your questions or comments" required=""
+                    <textarea id="comments" name="comments" placeholder="Your questions or comments" required="" onkeyup="check()"
                               style="overflow: hidden; overflow-wrap: break-word; height: 85px;"></textarea>
                     <input id="send_to" type="hidden" name="send_to" value="passerhii@gmail.com">
-                    <button class="button" type="submit" id="submitButton"  name="submitButton" value="Submit">Submit</button>
+                    <button class="button" type="submit" id="submitButton"  name="submitButton" value="Submit" disabled>Submit</button>
                     <!--                </fieldset>-->
                 </form>
             </div>
@@ -49,9 +49,11 @@
     </div>
 </div>
 <div>&#169; Israel Tech Challenge</div>
-
-<script src="portfolio.js"></script>
+<script src="./submit.js"></script>
 <script src="./forms.js"></script>
+<script src="portfolio.js"></script>
+
+
 
 </body>
 </html>
